@@ -1,0 +1,7 @@
+<button mat-raised-button color="primary" (click)="onAdd()">Add Todo</button>
+
+<ul *ngFor="let todo of todoList">
+  <li>{{ todo.name }}</li>
+  <mat-icon (click)="onEdit(todo)">edit</mat-icon>
+  <mat-icon (click)="onDelete(todo)">delete</mat-icon>
+</ul>
